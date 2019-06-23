@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CatCafe Album</title>
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/65cca3b56e.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link href="favicon.ico" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+        <script>
+        $(function(){
+  $("#toggle").click(function(){
+    $("#menu").slideToggle();
+    return false;
+  });
+  $(window).resize(function(){
+    var win = $(window).width();
+    var p = 480;
+    if(win > p){
+      $("#menu").show();
+    }
+  });
+});
+        </script>
+    </head>
+
+
+    <body id="photograph">
+        <header>
+            <div class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/cat-1583462_640.png" alt="Cat" width="100px" height="100px">
+                    <h2>CatCafe</h2>
+                </a>
+            </div>
+            <div id="menu-box">
+                    <div id="toggle"><a href="#">メニュー</a></div>
+                    <ul class="global-nav clearfix" id="menu">
+                        <li><a href="index.html" class="nav-index">トップ</a></li>
+                        <li><a href="fee.html" class="nav-fee">料金のご案内</a></li>
+                        <li><a href="shop.html" class="nav-shop">店内のご案内</a></li>
+                        <li><a href="cat.html" class="nav-cat">猫キャストの紹介</a></li>
+                        <li><a href="access.html" class="nav-access">アクセス&お問合せ</a></li>
+                    </ul>
+                </div>
+        </header>
+
+        <div id="wrap">
+            <div class="content clearfix">
+                <div class="images">
+                <section id="six">
+                    <h2>2016年</h2>
+                    <ul class="clearfix">
+                        <li><img src="images/domestic-cat-726989_1280.jpg"></li>
+                        <li><img src="images/cat-1941089_1280.jpg"></li>
+                        <li><img src="images/kittens-1916542_1280.jpg"></li>
+                        <li><img src="images/cat-1245673_1280.jpg"></li>
+                    </ul>
+                </section>
+                <section id="seven">
+                    <h2>2017年</h2>
+                    <ul class="clearfix">
+                        <li><img src="images/kitten-1031261_1280.jpg"></li>
+                        <li><img src="images/cat-4097325_1280.jpg"></li>
+                        <li><img src="images/adorable-1853372_1280.jpg"></li>
+                        <li><img src="images/animal-2178983_1280.jpg"></li>
+                    </ul>
+                </section>
+                <section id="eight">
+                    <h2>2018年</h2>
+                    <ul class="clearfix">
+                        <li><img src="images/animal-1837067_1280.jpg"></li>
+                        <li><img src="images/animal-1841202_1280.jpg"></li>
+                        <li><img src="images/cat-4225674_1280.jpg"></li>
+                        <li><img src="images/domestic-cat-4246593_1280.jpg"></li>
+                        </ul>
+                </section>
+                <section id="nine">
+                    <h2>2019年</h2>
+                    <ul class="clearfix">
+                        <li><img src="images/cat-4262795_1280.jpg"></li>
+                        <li><img src="images/kitten-2288404_1280.jpg"></li>
+                        <li><img src="images/cat-4267680_1280.jpg"></li>
+                        <li><img src="images/cat-2571971_1280.jpg"></li>
+                    </ul>
+                </section>
+                </div>
+                <aside class="sidebar">
+                        <section>
+                            <h2>Album</h2>
+                            <ul>
+                                <li><a href="photograph.html#six">2016年</a></li>
+                                <li><a href="photograph.html#seven">2017年</a></li>
+                                <li><a href="photograph.html#eight">2018年</a></li>
+                                <li><a href="photograph.html#nine">2019年</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h2>Video</h2>
+                            <ul>
+                                <li><a href="video.html#one">Movie No.1</a></li>
+                                <li><a href="video.html#two">Movie No.2</a></li>
+                            </ul>
+                        </section>
+                    </aside>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+            <section>
+                <h3>営業時間</h3>
+                <table>
+                    <tr>
+                        <th>月〜金</th>
+                        <td>13時〜19時</td>
+                    </tr>
+                    <tr>
+                        <th>土日祝日</th>
+                        <td>12時〜18時</td>
+                    </tr>
+                    <tr>
+                        <th>第２水曜日</th>
+                        <td>定休日</td>
+                    </tr>
+                </table>
+            </section>
+            <div class="icon">
+                <a href="https://twitter.com/login?lang=ja"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/?hl=ja"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copywriter">(C)2019 Hirata Akinobu</div>
+            </div>
+        </footer>
+    </body>
+</html>

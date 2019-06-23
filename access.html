@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CatCafe アクセス お問合わせ</title>
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/65cca3b56e.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link href="favicon.ico" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+        <script>
+        $(function(){
+  $("#toggle").click(function(){
+    $("#menu").slideToggle();
+    return false;
+  });
+  $(window).resize(function(){
+    var win = $(window).width();
+    var p = 480;
+    if(win > p){
+      $("#menu").show();
+    }
+  });
+});
+        </script>
+    </head>
+
+
+    <body id="access">
+        <header>
+            <div class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/cat-1583462_640.png" alt="Cat" width="100px" height="100px">
+                    <h2>CatCafe</h2>
+                </a>
+            </div>
+            <div id="menu-box">
+                    <div id="toggle"><a href="#">メニュー</a></div>
+                    <ul class="global-nav clearfix" id="menu">
+                        <li><a href="index.html" class="nav-index">トップ</a></li>
+                        <li><a href="fee.html" class="nav-fee">料金のご案内</a></li>
+                        <li><a href="shop.html" class="nav-shop">店内のご案内</a></li>
+                        <li><a href="cat.html" class="nav-cat">猫キャストの紹介</a></li>
+                        <li><a href="access.html" class="nav-access">アクセス&お問合せ</a></li>
+                    </ul>
+                </div>
+        </header>
+
+        <div id="wrap">
+            <div class="content">
+                <div class="access clearfix">
+                    <h2>アクセス</h2>
+                    <p>〒012-345</p>
+                    <p>○○都○○区○○町○〜○</p>
+                    <p>TEL:012-345-6789</p>
+                </div>
+                <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280303808788!2d139.76493611525882!3d35.68123618019432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1560296962390!5m2!1sja!2sjp" width="460" height="220" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div class="contact">
+                <h2>お問合せ</h2>
+                <div class="form">
+                    <form>
+                        <dl>
+                            <dt><span class="required">お名前</span></dt>
+                            <dd><input type="text" name="name" class="name" required></dd>
+                            <dt><span class="required">メールアドレス</span></dt>
+                            <dd><input type="email" name="email" class="email" required></dd>
+                            <dt>お電話番号</dt>
+                            <dd><input type="tel" name="tel" class="tel"></dd>
+                            <dt>お問い合わせ種類</dt>
+                            <dd>
+                                <select name="type" class="type">
+                                    <option value="ご質問">ご質問</option>
+                                    <option value="ご予約">ご予約</option>
+                                    <option value="その他お問い合わせ">その他お問い合わせ</option>
+                                </select>
+                            </dd>
+                            <dt>ご希望のご連絡方法</dt>
+                            <dd>
+                                <input type="radio" name="contact">Eメール
+                                <input type="radio" name="contact">お電話
+                            </dd>
+                            <dt>メッセージ</dt>
+                            <dd><textarea name="message" class="message"></textarea></dd>
+                        </dl>
+                        <button type="submit" class="btn">送信</button>
+                    </form>
+                    <p>*「<span class="required"></span>」の付いている項目は必須項目です。</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+            <section>
+                <h3>営業時間</h3>
+                <table>
+                    <tr>
+                        <th>月〜金</th>
+                        <td>13時〜19時</td>
+                    </tr>
+                    <tr>
+                        <th>土日祝日</th>
+                        <td>12時〜18時</td>
+                    </tr>
+                    <tr>
+                        <th>第２水曜日</th>
+                        <td>定休日</td>
+                    </tr>
+                </table>
+            </section>
+            <div class="icon">
+                <a href="https://twitter.com/login?lang=ja"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/?hl=ja"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copywriter">(C)2019 Hirata Akinobu</div>
+            </div>
+        </footer>
+    </body>
+</html>

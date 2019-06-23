@@ -1,0 +1,606 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    line-height: 2;
+}
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+img, embed, object, video {
+    max-width: 100%;
+}
+img{
+    vertical-align: bottom;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    background-color: #f5deb3;
+}
+.header{
+    max-width: 960px;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+.logo{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding: 25px;
+}
+.logo h2{
+    color: black;
+}
+#index .nav-index{
+    background-color: #ff7f50;
+}
+#access .nav-access{
+    background-color: #ff7f50;
+}
+#cat .nav-cat{
+    background-color: #ff7f50;
+}
+#fee .nav-fee{
+    background-color: #ff7f50;
+}
+#shop .nav-shop{
+    background-color: #ff7f50;
+}
+
+#index .nav-index:hover{
+    background-color: #ff7f50;
+    color: white;
+}
+#access .nav-access:hover{
+    background-color: #ff7f50;
+    color: white;
+}
+#cat .nav-cat:hover{
+    background-color: #ff7f50;
+    color: white;
+}
+#fee .nav-fee:hover{
+    background-color: #ff7f50;
+    color: white;
+}
+#shop .nav-shop:hover{
+    background-color: #ff7f50;
+    color: white;
+}
+footer{
+    width: 100%;
+}
+.footer{
+    border-top: 1px solid black;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+th{
+    background-color: #f0f0f0;
+    border: 1px solid black;
+    padding: 1px 40px;
+}
+td{
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 1px 40px;
+    border: 1px solid black;
+}
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    float: left;
+}
+.icon{
+    float: right;
+}
+.icon a{
+    color: black;
+    font-size: 50px;
+    float: left;
+    margin: 0 10px;
+}
+.icon a:visited{
+    color: black;
+}
+.copywriter{
+    text-align: center;
+    margin-top:200px; 
+    margin-bottom: 20px;
+}
+.content{
+    max-width: 960px;
+    margin: 0 auto;
+    height: 100%;
+}
+#index h1 {
+    font-family: 'Oswald', sans-serif;
+}
+#index .content{
+    color: white;
+    position: relative;
+}
+.text{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    margin-right: 10%;
+}
+.time{
+    float: left;
+    padding-left: 30px;
+    padding-right: 80px;
+}
+.drink{
+    float: left;
+}
+#fee .content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f5f5f5;
+}
+.coffee{
+    float: right;
+    width:300px;
+    margin-right: 5%;
+}
+#access .content{
+    background-color: #f5f5f5;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.access{
+    float: left;
+    margin-left: 50px;
+    margin-right: 10%;
+}
+.map{
+    position: relative;
+    overflow: hidden;
+    margin: 0 10% 10% 10%;
+}
+.map::before{
+    content: "";
+    display: block;
+    padding-top: 50%;
+}
+.map iframe,
+.map object,
+.map embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+.contact{
+    border-top: 1px solid black;
+    padding-top: 30px;
+}
+.contact h2{
+    margin-left: 50px;
+}
+.form{
+    margin-left: 100px;
+}
+#access .form dl dt{
+    width: 165px;
+    padding: 10px 0;
+    float: left;
+    clear: both;
+}
+#access .form dl dd{
+    padding: 10px 0;
+}
+#access .form .name,#access .form .email,#access .form .tel{
+    width: 80%;
+    height: 30px;
+}
+#access .form .type{
+    width: 30%;
+    height: 30px;
+}
+#access .form .message{
+    width: 80%;
+    height: 150px;
+}
+#access .type{
+    border: 1px solid black;
+}
+#access .form  button{
+    background-color: #00dfff;
+    color: white;
+    font-size: 20px;
+    width: 120px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 3px solid #00dfff;
+}
+#access .form  button:hover{
+    text-decoration: none;
+    background-color: white;
+    color: #00dfff;
+    cursor: pointer;
+}
+#access .form .required::after{
+    content: "*";
+    color: #ff0000;
+}
+#access .form .attention{
+    margin: 20px 0 0 165px;
+}
+.footer h3{
+    margin-bottom: 15px;
+}
+.cat{
+    width: 250px;
+    float: left;
+    clear: both;
+    margin-bottom: 30px;
+}
+#cat .content{
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.main{
+    margin-left: 30px;
+    float: left;
+}
+.sidebar{
+    width: 200px;
+    float: right;
+    margin: 60px 50px 0 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow: 4px 4px 4px;
+}
+.sidebar h2{
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+}
+.sidebar ul{
+    font-size: 16px;
+    margin-left: 20px;
+}
+.sidebar ul a{
+    color: #333333;
+}
+.main table{
+    margin-left: 30px;
+    margin-bottom: 30px;
+    height: 150px;
+    width: 300px;
+}
+.images{
+    float: left;
+    max-width: 700px;
+    clear: both;
+}
+#photograph .content,#video .content{
+    padding-bottom: 30px;
+}
+.images li{
+    width: 50%;
+    float: left;
+    list-style: none;
+}
+.images h2{
+    margin-bottom: 20px;
+    border-left: 10px solid #00dfff;
+    padding-left: 10px;
+}
+#photograph .sidebar,#video .sidebar{
+    margin: 90px 0 0 0;
+}
+#photograph section{
+    margin-top: 20px;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.movie{
+    float: left;
+    width: 70%;
+}
+.video{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.video::before{
+    content: "";
+    display: block;
+    padding-top: 50%;
+}
+.video iframe,
+.video object,
+.video embed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+.movie h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-left: 10px solid #00dfff;
+    padding-left: 10px;
+}
+#shop .content{
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+#shop .content h2{
+    border-left: 10px solid #00dfff;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#shop .content li{
+    margin-left: 5%;
+}
+.shop{
+    margin-left: 20px;
+    margin-right: 5%;
+}
+
+/* メニューバー */
+#menu{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+#menu li{
+    display: block;
+    float: left;
+    width: 20%;
+    margin: 0;
+    padding: 0; 
+    
+}
+#menu li a{
+    display: block;
+    padding: 12px 0 10px;
+    background-color: #ff8c00;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+#menu li a:hover{
+    background-color: white;
+    color: #ff8c00;
+}
+#toggle{ 
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    #menu li{
+    width: 20%;
+    border-bottom: 1px solid #444;
+}
+}
+@media only screen and (max-width: 600px) {
+    #menu{
+    display: none;
+    }
+    #menu li{
+    width: 100%;
+    }
+    #toggle{
+    display: block;
+    position: relative;
+    width: 100%;
+    background: #222;
+    }
+    #toggle a{
+    display: block;
+    position: relative;
+    padding: 12px 0 10px;
+    border-bottom: 1px solid #444;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    }
+    #toggle:before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: #fff;
+    }
+    #toggle a:before, #toggle a:after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    height: 4px;
+    background: #222;
+    }
+    #toggle a:before{
+    margin-top: -6px;
+    }
+    #toggle a:after{
+    margin-top: 2px;
+    }
+}
+
+
+/* タブレットサイズ */
+@media screen and (max-width:896px){
+.footer{
+    padding: 30px 10% 0;
+}
+.drink{
+    float: right;
+    margin-right: 10%;
+}
+.time{
+    margin-bottom: 50px;
+}
+.coffee{
+    float: none;
+    margin: 0 auto;
+}
+.cat{
+    width: 40%;
+}
+.cats table{
+    margin: 0 0 5% 5%;
+}
+.images{
+    margin: 5%;
+}
+.sidebar{
+    width: 40%;
+    margin: 0 30%;
+    float: left;
+    padding: 5%;
+}
+#photograph .sidebar{
+    width: 40%;
+    margin: 10% 30% 10%;
+    float: left;
+    padding: 5%;
+}
+#video .sidebar{
+    width: 40%;
+    margin: 10% 30% 10%;
+    float: left;
+    padding: 5%;
+}
+.movie{
+    width: 100%;
+}
+.video{
+    width: 90%;
+    margin: 0 5%;
+}
+.movie h2{
+    margin: 5%;
+}
+}
+/* スマホサイズ */
+@media screen and (max-width:600px){
+body{
+    font-size: 3.5vw;
+}
+h1{
+    font-size: 7.2vw;
+}
+h2{
+    font-size: 6vw;
+}
+.footer {
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer table{
+    float: none;
+    width: 90%;
+    margin: 5%;
+}
+.icon{
+    float: none;
+}
+.icon a{
+    margin: 0;
+    width: 33%;
+}
+#fee .content{
+    text-align: center;
+    margin: 0;
+}
+
+.time{
+    float: none;
+    padding: 0;
+}
+.time table{
+    width: 90%;
+    margin: 0 5%;
+}
+.drink{
+    float: none;
+    margin: 0;
+    text-align: center;
+}
+.cat{
+    width: 90%;
+    margin: 0 5%;
+}
+.main{
+    margin: 0;
+}
+.cats table{
+    width: 90%;
+    margin: 5% 5%;
+}
+.main h2,.images h2{
+    margin-left: 5%;
+}
+.sidebar{
+    width: 80%;
+    margin: 0 5%;
+    float: left;
+    padding: 5%;
+}
+.images,.movie{
+    margin-bottom: 5%;
+}
+.images li{
+    width: 90%;
+    margin: 0 5%;
+}
+#photograph .sidebar,#video .sidebar{
+    width: 80%;
+    margin: 0 5%;
+    float: left;
+    padding: 5%;
+}
+.access{
+    float: none;
+    margin-left: 5%;
+}
+.map{
+    margin: 3% 3%;
+}
+.form{
+    margin :0;
+}
+#access .form  button{
+    width: 80%;
+    margin: 0 auto;
+}
+#access .form dl dt{
+    float: none;
+}
+#access .form dt,
+.contact p,
+.contact h2{
+    margin-left: 10%;
+}
+
+}

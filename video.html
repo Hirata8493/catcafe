@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>CatCafe Video</title>
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/65cca3b56e.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link href="favicon.ico" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+        <script>
+        $(function(){
+  $("#toggle").click(function(){
+    $("#menu").slideToggle();
+    return false;
+  });
+  $(window).resize(function(){
+    var win = $(window).width();
+    var p = 480;
+    if(win > p){
+      $("#menu").show();
+    }
+  });
+});
+        </script>
+    </head>
+
+
+    <body id="video">
+        <header>
+            <div class="header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/cat-1583462_640.png" alt="Cat" width="100px" height="100px">
+                    <h2>CatCafe</h2>
+                </a>
+            </div>
+            <div id="menu-box">
+                    <div id="toggle"><a href="#">メニュー</a></div>
+                    <ul class="global-nav clearfix" id="menu">
+                        <li><a href="index.html" class="nav-index">トップ</a></li>
+                        <li><a href="fee.html" class="nav-fee">料金のご案内</a></li>
+                        <li><a href="shop.html" class="nav-shop">店内のご案内</a></li>
+                        <li><a href="cat.html" class="nav-cat">猫キャストの紹介</a></li>
+                        <li><a href="access.html" class="nav-access">アクセス&お問合せ</a></li>
+                    </ul>
+                </div>
+        </header>
+
+    <div id="wrap">
+        <div class="content clearfix">
+            <div class="movie">
+                <section id="one">
+                    <h2>Movie No.1</h2>
+                    <div class="video">
+                    <iframe width="700" height="394" src="https://www.youtube.com/embed/ZfpjPMscZBs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </section>
+                <section id="two">
+                    <h2>Movie No.2</h2>
+                    <div class="video">
+                    <iframe width="700" height="394" src="https://www.youtube.com/embed/ahhiAtDTGs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </section>
+            </div>
+                <aside class="sidebar">
+                        <section>
+                            <h2>Album</h2>
+                            <ul>
+                                <li><a href="photograph.html#six">2016年</a></li>
+                                <li><a href="photograph.html#seven">2017年</a></li>
+                                <li><a href="photograph.html#eight">2018年</a></li>
+                                <li><a href="photograph.html#nine">2019年</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h2>Video</h2>
+                            <ul>
+                                <li><a href="video.html#one">Movie No.1</a></li>
+                                <li><a href="video.html#two">Movie No.2</a></li>
+                            </ul>
+                        </section>
+                    </aside>
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+            <section>
+                <h3>営業時間</h3>
+                <table>
+                    <tr>
+                        <th>月〜金</th>
+                        <td>13時〜19時</td>
+                    </tr>
+                    <tr>
+                        <th>土日祝日</th>
+                        <td>12時〜18時</td>
+                    </tr>
+                    <tr>
+                        <th>第２水曜日</th>
+                        <td>定休日</td>
+                    </tr>
+                </table>
+            </section>
+            <div class="icon">
+                <a href="https://twitter.com/login?lang=ja"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/?hl=ja"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="copywriter">(C)2019 Hirata Akinobu</div>
+            </div>
+        </footer>
+    </body>
+</html>
